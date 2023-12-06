@@ -12,7 +12,7 @@ def get_news():
     articles = []
 
     if data["status"] == "ok":
-        for i in data['articles'][:5]:
+        for i in data['articles'][:50]:
             article = i["title"]
             articles.append(article)
 
