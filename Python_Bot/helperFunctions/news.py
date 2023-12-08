@@ -2,7 +2,7 @@ import requests
 import json
 from decouple import config
 
-API_KEY = config('API')
+API_KEY = config('NEWS_API')
 
 def get_news():
     url = "https://newsapi.org/v2/top-headlines?country=us&apiKey="+API_KEY
